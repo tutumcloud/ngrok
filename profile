@@ -4,8 +4,9 @@ export DOMAIN=ngrok.example.com
 export BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Compile parameter
-export SERVER_PATH=${BASEDIR}/run/server
-export CLIENT_PATH=${BASEDIR}/run/client
+export RUN_PATH=${BASEDIR}/run
+export SERVER_PATH=${RUN_PATH}/server
+export CLIENT_PATH=${RUN_PATH}/client
 
 
 # Run parameter

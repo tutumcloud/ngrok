@@ -36,7 +36,7 @@ echo "[`date +'%X'`] Replace the client config file"
 sed -i "s/server_addr.*/server_addr: ${DOMAIN}${TUNNEL_PORT}/g" ${CLIENT_PATH}/config_client.yml
 
 echo "[`date +'%X'`] Zip the pack ready for you to distribute"
-7za a -r ${RUN_PATH}/client.7z ${CLIENT_PATH}/client
+7za a -r ${RUN_PATH}/client.7z ${CLIENT_PATH}
 
 echo "SERVER_PATH: ${SERVER_PATH}"
 echo "CLIENT_PATH: ${CLIENT_PATH}"

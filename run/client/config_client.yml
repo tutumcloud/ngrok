@@ -1,0 +1,15 @@
+server_addr: "ngrok.example.com:6062"
+trust_host_root_certs: false
+tunnels:
+  ss:
+    remote_port: 202
+    proto:
+      tcp: 5432
+  webpage:
+    remote_port: 202
+    proto:
+      http: 8080
+
+log: "./ngrok_client.log"
+log_level: "info"
+log_format: "json"
